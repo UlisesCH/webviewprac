@@ -13,16 +13,16 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  String _currentUrl = 'https://virtual.fmoues.edu.sv'; // URL
+  final String _currentUrl = 'https://virtual.fmoues.edu.sv'; // URL
 
   @override
-
   void initState() {
     super.initState();
     // Enable hybrid composition.
     if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
   }
 
+  @override
   Widget build(BuildContext context) {
     return WebView(
       javascriptMode: JavascriptMode.unrestricted,
