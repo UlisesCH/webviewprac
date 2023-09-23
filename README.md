@@ -19,3 +19,11 @@ samples, guidance on mobile development, and a full API reference.
 # Codigo de la comunidad que se utilizo como apoyo
 
 https://pub.dev/packages/webview_flutter/versions/3.0.4
+
+# Pasos que se realizo para el funcionamiento
+
+1. En el archivo pubspec.yaml se agrego la siguiente dependencia  webview_flutter: ^3.0.4
+2. En el archivo lib/app/view/home.dart se agrega  import 'package:webview_flutter/webview_flutter.dart';
+3. En el archivo android/app/build.gradle se agrega la version del sdk, en este caso la 19, quedaria de sta manera  minSdkVersion 19
+4. Para permitir el acceso a internet, en el archivo android/app/src/main/AndroidManifest.xml se agrega el permiso  <uses-permission android:name="android.permission.INTERNET"/>
+
