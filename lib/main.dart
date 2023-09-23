@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'dart:io';
+
+import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
@@ -46,6 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const WebView(
       initialUrl: 'https://virtual.fmoues.edu.sv',
-    ); 
+    );
   }
 }
